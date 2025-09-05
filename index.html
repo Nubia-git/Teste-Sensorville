@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Seleção</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="card">
+      <!-- Logo -->
+      <img src="logo-sensorville.png" alt="Logo Sensorville" class="logo">
+
+      <h2>Cadastro</h2>
+      <p class="intro">
+        Nesta página você poderá preencher algumas informações básicas que serão 
+        registradas automaticamente em uma planilha do Google Sheets.  
+        O objetivo é demonstrar a integração entre um site simples e um sistema 
+        de armazenamento em nuvem, como parte do desafio técnico.
+      </p>
+      <p class="intro destaque">
+        👉 Preencha seu <strong>nome</strong>, sua <strong>idade</strong> e, se quiser, 
+        adicione o link de uma <strong>imagem</strong>.  
+        Depois clique em <strong>Enviar</strong> para salvar seus dados.
+      </p>
+      <form id="form">
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+        <input type="number" id="idade" placeholder="Digite sua idade" required>
+        <input type="text" id="imagem" placeholder="Cole o link da imagem">
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="status"></p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 - Inspirado por Sensorville</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

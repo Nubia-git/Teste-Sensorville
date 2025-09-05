@@ -1,0 +1,112 @@
+:root {
+  --cor-primaria: #0d1b2a;
+  --cor-destaque: #ffbf00;
+  --cor-texto: #333;
+  --cor-clara: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--cor-primaria);
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.page-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: var(--cor-primaria);
+}
+
+/* Card branco centralizado */
+.card {
+  background: var(--cor-clara);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: var(--cor-primaria);
+}
+
+.card .intro {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: var(--cor-texto);
+  line-height: 1.4;
+}
+
+.card .intro.destaque {
+  background: #f9f9f9;
+  border-left: 4px solid var(--cor-destaque);
+  padding: 10px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+/* Estilo do formulário */
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--cor-destaque);
+  box-shadow: 0 0 5px rgba(255,191,0,0.5);
+}
+
+button {
+  background: var(--cor-destaque);
+  color: var(--cor-primaria);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e6ac00;
+}
+
+#status {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: green;
+}
+
+.logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  background: var(--cor-primaria);
+  font-size: 0.9rem;
+}
